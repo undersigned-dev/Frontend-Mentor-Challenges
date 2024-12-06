@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(47, 88%, 63%);
+  font-family: Figtree;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+main {
+  width: clamp(15rem, 31vw, 20rem);
+  background-color: white;
+  border-radius: 1rem;
+  border: 1px solid;
+  box-shadow: 10px 10px 1px rgb(0, 0, 0);
+  padding: 1rem;
+}
+.thumbnail {
+  display: flex;
+  justify-content: center;
+}
+.illustration {
+  min-width: 15rem;
+  max-width: 25rem;
+  border-radius: 1rem;
+}
+h1,
+span,
+.learning {
+  font-weight: 800;
+}
+.learning {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 0.5rem;
+  margin-top: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+.date {
+  margin: 0;
+}
+h1 {
+  font-size: 1.5rem;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.para {
+  color: hsl(0, 0%, 42%);
+}
+.dp {
+  width: 2.3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}

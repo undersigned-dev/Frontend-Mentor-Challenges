@@ -1,0 +1,127 @@
+/* fonts link */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* boiler css */
+:root {
+  --dark-grey: hsl(228, 12%, 48%);
+  --dark-cyan: hsl(158, 36%, 37%);
+  --dark-blue: hsl(212, 21%, 14%);
+  --cream: hsl(30, 38%, 92%);
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: hsl(30, 38%, 92%);
+  font-family: montserrat;
+  font-size: 14px;
+}
+main {
+  margin: 8em auto 0 auto;
+  width: 40rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.perfume-img {
+  width: 100%;
+}
+.section {
+  display: flex;
+  justify-content: flex-start;
+}
+.section-2 {
+  background-color: white;
+}
+.hero-container {
+  margin: 2rem;
+}
+/* header text */
+.heading {
+  letter-spacing: 0.4rem;
+  font-weight: 500;
+}
+p {
+  font-weight: 500;
+  line-height: 1.5em;
+}
+/* giving font-style to heading & .price span */
+h1,
+.price {
+  font-family: fraunces;
+  font-size: 2rem;
+  font-weight: bold;
+}
+/* setting text width */
+h1,
+p,
+.price-container {
+  width: 86%;
+}
+/* grey text */
+p,
+span {
+  color: var(--dark-grey);
+}
+.price-container {
+  width: 80%;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price {
+  color: var(--dark-cyan);
+}
+button {
+  color: white;
+  background-color: var(--dark-cyan);
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+.cart-svg {
+  margin-right: 10px;
+}
+.attribution {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 662px) {
+  main {
+    margin: 1.7rem auto 0 auto;
+    width: 21rem;
+    height: 38rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  p,
+  h1 {
+    width: 100%;
+  }
+  .hero-container {
+    margin: 2px 1.5rem;
+  }
+  h1 {
+    margin: 0.8rem 0;
+  }
+  .price-container {
+    margin: 0;
+  }
+  .section-1 {
+    height: 40%;
+  }
+  .section-2 {
+    height: 60%;
+  }
+  .perfume-img {
+    object-fit: cover;
+  }
+  button {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,20 @@
+@media (max-width: 800px) {
+  body {
+    background-color: white;
+  }
+  main {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border-radius: none;
+    max-width: 25rem;
+    background-color: white;
+    padding: 0;
+  }
+  .main-card {
+    padding: 0 2rem;
+  }
+  .recipe-pic img {
+    max-width: 25rem;
+    border-radius: 0;
+  }
+}
